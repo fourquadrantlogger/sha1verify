@@ -25,9 +25,7 @@ var (
 )
 
 func walk(folderpath string)  {
-
 	err := filepath.Walk(folderpath, func(fpath string, f os.FileInfo, err error) error {
-
 		if(Ignored(fpath)){
 			return nil
 		}
@@ -89,12 +87,29 @@ func main() {
 			ignoreconfigs[line]=index
 		}
 	}
-	fmt.Println(ignoreconfigs)
+	//fmt.Println(ignoreconfigs)
 	if(*folder==""){
-		*folder,_=os.Getwd()
-		rootpath=*folder
+		arg0,_:=os.Getwd()
+		f,_:=os.Stat(arg0)
+		if(f.IsDir()){
 
+			rootpath=arg0
+			*folder=rootpath
+		}else {
+			rootpath=filepath.Dir(arg0)
+			*folder=rootpath
+		}
+	}else {
+		f,_:=os.Stat(*folder)
+		if(f.IsDir()){
+			rootpath=*folder
+			*folder=rootpath
+		}else {
+			rootpath=filepath.Dir(*folder)
+			*folder=rootpath
+		}
 	}
+	//fmt.Println("rootpath",rootpath)
 	walk(*folder)
 	resultfile:="sha1 results"
 	for key,value:=range files{

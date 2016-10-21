@@ -12,3 +12,8 @@ go build
 go build
 ./sha1verify  --folder="/MacData/GOPATH/src/code.aliyun.com/timeloveboy/sha1verify/"  --outfile="my.txt" --gitignore=".gitignore"
 ```
+
+```
+go run sha1verify.go
+go run 
+```

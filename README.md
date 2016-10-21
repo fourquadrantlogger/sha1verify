@@ -1,5 +1,5 @@
 # sha1verify
-sha1 hash值计算
+sha1 hash
 ## command
 
 ```

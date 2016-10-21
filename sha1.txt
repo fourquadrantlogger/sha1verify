@@ -1,0 +1,6 @@
+sha1 results
+/MacData/GOPATH/src/code.aliyun.com/timeloveboy/sha1verify/README.md,67,5a3b5ebf201844edfca2db99c83db641f49bfe55
+/MacData/GOPATH/src/code.aliyun.com/timeloveboy/sha1verify/app.go,2047,000b9def619e03b5de9446268bb05d36c2bbd19b
+/MacData/GOPATH/src/code.aliyun.com/timeloveboy/sha1verify/sha1.txt,586,dbd7e4ecd00886ea0d77b22919298566ff34c457
+/MacData/GOPATH/src/code.aliyun.com/timeloveboy/sha1verify/sha1verify,2735392,b11fc94814af042cee9e3b33056ee6e1106ea1ac
+/MacData/GOPATH/src/code.aliyun.com/timeloveboy/sha1verify/wildmatch.go,32,49fdc4648788e8416b65c0dfd5de475d4840b73b

@@ -17,3 +17,13 @@ go build
 go run sha1verify.go
 go run 
 ```
+
+## 过滤配置文件
+仅支持过滤文件，和文件夹
+
+```
+/out
+/.gitignore
+/.idea
+/.git
+```
